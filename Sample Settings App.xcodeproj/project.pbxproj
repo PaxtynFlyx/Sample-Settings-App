@@ -12,6 +12,7 @@
 		8CD30CB326B330A30033579B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD30CB226B330A30033579B /* ViewController.swift */; };
 		8CD30CB826B330A60033579B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CD30CB726B330A60033579B /* Assets.xcassets */; };
 		8CD30CBB26B330A60033579B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CD30CB926B330A60033579B /* LaunchScreen.storyboard */; };
+		8CD30CC326B35C470033579B /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD30CC226B35C470033579B /* SettingCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		8CD30CB726B330A60033579B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CD30CBA26B330A60033579B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8CD30CBC26B330A60033579B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CD30CC226B35C470033579B /* SettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				8CD30CAE26B330A30033579B /* AppDelegate.swift */,
 				8CD30CB026B330A30033579B /* SceneDelegate.swift */,
 				8CD30CB226B330A30033579B /* ViewController.swift */,
+				8CD30CC226B35C470033579B /* SettingCell.swift */,
 				8CD30CB726B330A60033579B /* Assets.xcassets */,
 				8CD30CB926B330A60033579B /* LaunchScreen.storyboard */,
 				8CD30CBC26B330A60033579B /* Info.plist */,
@@ -135,6 +138,7 @@
 			files = (
 				8CD30CB326B330A30033579B /* ViewController.swift in Sources */,
 				8CD30CAF26B330A30033579B /* AppDelegate.swift in Sources */,
+				8CD30CC326B35C470033579B /* SettingCell.swift in Sources */,
 				8CD30CB126B330A30033579B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
