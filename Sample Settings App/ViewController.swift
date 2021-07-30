@@ -18,7 +18,7 @@ class ViewController: UIViewController {
 
     private let tableView: UITableView = {
         let tableView = UITableView(frame: .zero, style: .grouped)
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView.register(SettingCell.self, forCellReuseIdentifier: SettingCell.identifier)
         
         return tableView
     }()
@@ -36,7 +36,7 @@ class ViewController: UIViewController {
     }
     
     private func configure() {
-        self.models = Array(0...100).compactMap({
+        self.models = Array(0...50).compactMap({
             SettingsOption(title: "Item \($0)", icon: UIImage(systemName: "house"), iconBackgroundColor: .systemPink, handler: {
                 
             })
@@ -53,8 +53,12 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let model = models[indexPath.row]
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = model.title
+        
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: SettingCell.identifier, for: indexPath) as? SettingCell else {
+            return UITableViewCell()
+        }
+        
+        cell.configure(with: model)
         
         return cell
     }
